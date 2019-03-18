@@ -15,7 +15,7 @@ public class UserAccessAspect {
 	
 	//execution(* PACKAGE.*.*(..))
 	
-	@Before("execution(* com.techbrenda.spring.aop.springaop.business.*.*(..))")
+	@Before("execution(* com.techbrenda.spring.aop.springaop.data.*.*(..))")
 	public void before(JoinPoint joinPoint) {
 		logger.info("Check for user access");
 		logger.info("Allowed execution for {}", joinPoint);
